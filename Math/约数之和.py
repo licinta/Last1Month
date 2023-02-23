@@ -1,5 +1,5 @@
 from collections import Counter
-<<<<<<< HEAD
+
 n=int(input())
 li=[]
 for i in range(n):
@@ -22,7 +22,7 @@ for i in li:
 ##print(c)
 ##a=p1^x1 * p2^x2 * p3^x3... * pn^xn
 ##
-=======
+
 
 n = int(input())
 li = []
@@ -54,4 +54,4 @@ print(ans)
 ##a=p1^x1 * p2^x2
 ## p1^0 * p2^0 + p1^1 * p2^0 + p1^1 * p2^1 + p1^0 * p2^1
 ## (p1^0 + p1^1 + p1^2 + ... +p1^n) * (p2^0 + p2^1 + p2^2 + ... +p2^n)
->>>>>>> 06ec18d (Add files via upload)
+

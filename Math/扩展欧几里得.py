@@ -9,4 +9,4 @@ def exgcd(a,b):
 n=int(input())
 for i in range(n):
     a,b=map(int,input().split())
-    print(exgcd(a,b)[0])
+    print(*exgcd(a,b)[1:])
