@@ -1,4 +1,0 @@
-a.cpp:1:9: fatal error: 11/iostream: No such file or directory
-    1 | #include<11/iostream>
-      |         ^~~~~~~~~~~~~
-compilation terminated.
