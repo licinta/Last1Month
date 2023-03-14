@@ -21,22 +21,27 @@ class KMP:
 
     def match(self):
         i, j = 0, 0
+        ans = []
         while i < len(self.string):
             if self.string[i] == self.pattern[j]:
                 while i < len(self.string) and j < len(self.pattern) and self.string[i] == self.pattern[j]:
                     i += 1
                     j += 1
                 if j == len(self.pattern):
-                    print(i - j)
+                    ans.append(i - j)
                     j = self.p[j - 1]
                 if i == len(self.string):
-                    print("out")
-                    return
+                    return ans
             else:
                 i += 1
-        return
+        return ans
 
 
-kmp = KMP("aabaaa")
-kmp.set_string("aabaaabaaa")
-kmp.match()
+n = int(input())
+
+kmp = KMP(input())
+
+m = int(input())
+kmp.set_string(input())
+for i in kmp.match():
+    print(i, end=' ')
